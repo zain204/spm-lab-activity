@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrightWeb Solutions - Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <section class="page-title"><div class="container"><h1>Contact Us</h1></div></section>
+
+  <section class="container section contact-grid">
+    <div class="card">
+      <h3>Get In Touch</h3>
+      <p><strong>Address:</strong> 123 Main Street, Lahore, Pakistan</p>
+      <p><strong>Phone:</strong> +92 300 1234567</p>
+      <p><strong>Email:</strong> info@brightweb.com</p>
+      <p><strong>Hours:</strong> Mon - Fri, 9:00 AM - 6:00 PM</p>
+    </div>
+
+    <form id="contact-form" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your name">
+      <span class="error" id="name-error"></span>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your email">
+      <span class="error" id="email-error"></span>
+
+      <label for="subject">Subject</label>
+      <select id="subject">
+        <option value="">-- Select a subject --</option>
+        <option>Website Design</option>
+        <option>Website Development</option>
+        <option>Support</option>
+        <option>Other</option>
+      </select>
+      <span class="error" id="subject-error"></span>
+
+      <label for="message">Message <small id="counter">0/300</small></label>
+      <textarea id="message" rows="5" maxlength="300" placeholder="Your message"></textarea>
+      <span class="error" id="message-error"></span>
+
+      <button type="submit" class="btn">Send Message</button>
+      <p id="success-msg"></p>
+    </form>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
